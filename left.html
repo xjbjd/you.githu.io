@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="left.css">
+   
+</head>
+<body>
+    <div class="home">
+        <hr>
+        <ul>
+           
+            <li data-url="center.html">
+                &nbsp;&nbsp;&nbsp;<img src="icon/home.png">&nbsp;&nbsp; Home<title>Home</title></li>
+            
+            <li data-url="short.html">
+                &nbsp;&nbsp;&nbsp;<img src="icon/short.png"> &nbsp;&nbsp; Shorts
+            </li>
+            
+                <li data-url="subscrap.html">
+                    &nbsp;&nbsp;&nbsp;<img src="icon/subscrab.png">&nbsp;&nbsp; Subscrape<title>Home</title></li>
+            
+            <hr width="100%" >
+
+                <li data-url="you.html" >
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You ><title>Home</title></li>
+            
+            
+             <li data-url="history.html" >
+                &nbsp;&nbsp;&nbsp;
+                    <img src="icon/history.png">&nbsp;&nbsp; Histrory<title>Home</title></li>
+            
+            
+                <li data-url="playlist.html" >
+                    &nbsp;&nbsp;&nbsp;<img src="icon/playlist.png">&nbsp;&nbsp; Playlists<title>Home</title></li>
+            
+            
+                <li data-url="you-video.html" >
+                    &nbsp;&nbsp;&nbsp;<img src="icon/your video.png">&nbsp;&nbsp; Your Video<title>Home</title></li>
+            
+            
+                <li data-url="watch.html" >
+                    &nbsp;&nbsp;&nbsp;<img src="icon/wach later.webp">&nbsp;&nbsp; Watch Later<title>Home</title></li>
+            
+            
+                <li data-url="like-video.html" >
+                    &nbsp;&nbsp;&nbsp;<img src="icon/like.png">&nbsp;&nbsp; Likes Video<title>Home</title></li>
+            
+            <hr width="100%" >
+            <h2>Subscriptions</h2>
+            
+                <li  data-url="tra.html">
+                    &nbsp;&nbsp;&nbsp; 
+                    <div class="user-sub">
+                         <img src="user-sub/tra.jpg">
+                    </div> 
+                    &nbsp;&nbsp; pro Tra<title>Home</title></li>
+            
+            
+                <li data-url="nak.html" >
+                    &nbsp;&nbsp;&nbsp;
+                    <div class="user-sub">
+                        <img src="user-sub/nak.jpg">
+                    </div>
+                     &nbsp;&nbsp; por nak<title>Home</title></li>
+            
+           
+                <li data-url="kakada.html">
+                    &nbsp;&nbsp;&nbsp;
+                    <div class="user-sub">
+                        <img src="user-sub/kakada.jpg">
+                    </div>
+                    &nbsp;&nbsp; por Kakada<title>Home</title></li>
+        
+            <a href="#">
+                <li>&nbsp;&nbsp;&nbsp;
+                    <div class="user-sub">
+                        <img src="user-sub/sim.jpg">
+                    </div>
+                    &nbsp;&nbsp; pro sim<title>Home</title></li>
+            </a>
+            
+                <li data-url="tra.html" >
+                    &nbsp;&nbsp;&nbsp;
+                    <div class="user-sub">
+                        <img src="user-sub/tra.jpg">
+                   </div> 
+                    &nbsp;&nbsp; User pro<title>Home</title></li>
+            
+            
+                <li data-url="nak.html" >
+                    &nbsp;&nbsp;&nbsp;
+                    <div class="user-sub">
+                        <img src="user-sub/nak.jpg">
+                    </div>
+                    &nbsp;&nbsp; Bec zin<title>Home</title></li>
+            
+            <a href="#">
+                <li>&nbsp;&nbsp;&nbsp;
+                    
+                    &nbsp;&nbsp;see more ><title>Home</title></li>
+            </a>
+            <hr width="100%" >
+            <h2>More from YouTube</h2>
+            
+                <li data-url="https://xjbjd.github.io/computer-sim.githu.io/" >
+                    &nbsp;&nbsp;&nbsp;
+                    <img src="icon/youtube.png">&nbsp;&nbsp; youtube premam<title>Home</title></li>
+            
+            
+                <li data-url="https://www.goldonecomputer.com/" >
+                    &nbsp;&nbsp;&nbsp;
+                    <img src="icon/youtube-studio.png">&nbsp;&nbsp; youtube studio<title>Home</title></li>
+            
+            
+                <li  data-url="https://xjbjd.github.io/computer-sim.githu.io/">
+                    &nbsp;&nbsp;&nbsp;
+                    <img src="icon/Youtube_Music_icon.svg.png">
+                    &nbsp;&nbsp; Youtube Music<title>Home</title></li>
+            
+            <a href="#">
+                <li>&nbsp;&nbsp;&nbsp;
+                    <img src="icon/youtube-kids-vector-512x512.png">
+                    &nbsp;&nbsp; Likes Video<title>Home</title></li>
+            </a>
+            
+            <hr width="100%" >
+            <h2>Sitting</h2>
+            <a href="#">
+                <li>&nbsp;&nbsp;&nbsp;
+                    <img src="setting/settings-icon-2048x2046-cw28eevx.png">&nbsp;&nbsp; Setting<title>Home</title></li>
+            </a>
+            <a href="#">
+                <li>&nbsp;&nbsp;&nbsp;
+                    <img src="setting/report.png">&nbsp;&nbsp; Report History<title>Home</title></li>
+            </a>
+            <a href="#">
+                <li>&nbsp;&nbsp;&nbsp;
+                    <img src="setting/help-175.png">
+                    &nbsp;&nbsp; help<title>Home</title></li>
+            </a>
+           
+            
+            <hr width="100%" >
+                <p>AboutPressCopyrightContact usCreatorAdvertiseDevelopers</p> 
+            <p>TermsPrivacyPolicy & SafetyHow YouTube worksTest new features</p>
+        </ul>
+
+    </div>
+    
+<script>
+    document.querySelectorAll("li").forEach(item => {
+        item.addEventListener("click", function() {
+            let url = this.getAttribute("data-url");
+            if (url) {
+                parent.document.getElementById("centerIframe").src = url;
+            }
+        });
+    });
+</script>
+</body>
+</html>

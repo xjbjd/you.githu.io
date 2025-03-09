@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.man{
+  
+    width: 100%;
+    height: 779px;
+}
+.music{
+    background-color: rgb(245, 252, 245);
+    width: 100%;
+    height: 500px;
+}
+.p{
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+.tex{
+   
+    width: 40%;
+    height: 300px;
+}
+.photo{
+    background-color: rgb(228, 90, 233);
+    width: 60%;
+    height: 300px;
+}
+.photo img{
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+   
+}
+.tex img{
+    width: 340px;
+    object-fit: cover;
+    height: 300px;
+}
+
+.donw{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(236, 243, 243);
+}
+.d{
+    padding: 10px;
+    width: 60%;
+    height: 200px;
+    
+}
+.save{
+    width: 40%;
+    height: 200px;
+   
+}
+h2{
+    font-family: khmer os battambang;
+    font-size: 25px;
+
+}
+h3{
+    font-family: khmer os battambang;
+    font-size: 20px;
+    color: rgb(143, 138, 138);
+
+}
+h4{
+    font-family: khmer os battambang;
+    font-size: 20px;
+    color: rgb(93, 228, 16);
+}
+.in{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+  
+}
+.on{
+    gap: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    height: 100px;
+   
+}
+.do:hover{
+    background-color: rgb(186, 252, 252);
+}
+.do{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    width: 60%;
+    height: 50px;
+    box-shadow: rgb(136, 136, 138) 0 0 5px 0;
+   
+}
+.pla{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: rgb(194, 194, 194) 0 0 5px 0;
+
+}
+h5{
+    font-family: khmer os battambang;
+    font-size: 20px;
+    color: rgb(9, 10, 10);
+}
+.pla img{
+    width: 30px;
+}
+.pla:hover{
+    background-color: rgb(156, 253, 248);
+}
+.com{
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: rgb(175, 170, 170) 0 0 5px 0;
+    background-color: rgb(230, 229, 229);
+    width: 100%;
+    display: flex;
+    height: auto; 
+
+}
+.u{
+  
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 90px; 
+}
+.u img{
+    width: 60px;
+    border-radius: 50%;
+}
+.text{
+    
+    width: 75%;
+    
+    height: 90px;
+}
+.ma{
+    width: 10%;
+    height: 90px;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.ma img{
+    
+    width: 25px;
+}
+h1{
+    margin-top: 15px;
+    font-family: khmer os battambang;
+    font-size: 18px;
+}
+h6{
+    font-family: khmer os battambang;
+    font-size: 14px;
+    color: rgb(97, 99, 100);
+}

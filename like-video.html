@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="like-video.css">
+</head>
+<body>
+    <div class="man">
+        <div class="subman">
+            <div class="in">
+                <iframe id="iframein" src="iframein.html" ></iframe>
+            </div>
+            <div class="under">
+                <iframe id="iframeon" src="iframeon.html" ></iframe>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("iframein").addEventListener("load", function() {
+            let leftDocument = this.contentDocument || this.contentWindow.document;
+    
+            if (!leftDocument) return; // Ensure the document is accessible
+    
+            leftDocument.querySelectorAll("li").forEach(item => {
+                item.addEventListener("click", function() {
+                    let url = this.getAttribute("data-url");
+                    document.getElementById("iframeon").src = url;
+                });
+            });
+        });
+    </script>
+</body>
+</html>

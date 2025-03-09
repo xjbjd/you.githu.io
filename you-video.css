@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: khmer os battambang;
+}
+.man{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  
+    height: auto;
+    width: 100%;
+}
+.managerman{
+  
+    height:auto;
+    width: 1200px;
+}
+.baground{
+   
+    height: 250px;
+    width: 1200px;
+    border-radius: 15px;
+}
+.baground img{
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+    border-radius: 15px;
+}
+.user{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(226, 219, 226);
+    height: 250px;
+    box-shadow: rgb(196, 174, 196) 0px 0px 10px 0px;
+    width: 1200px;
+}
+hr{
+    margin: 2px;
+    opacity: 30%;
+}
+.p{
+   
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  
+    height: 250px;
+    width: 300px;
+}
+.p img{
+   box-shadow: rgb(235, 233, 136) 0px 0px 0px 5px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.name{
+ 
+    height: 250px;
+    width: 900px;
+}
+h1 h2{
+   margin: 10px;
+}
+h2{
+    font-size: 19px;
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: rgb(14, 11, 11);
+}
+.sub{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 30px;
+    margin-left: 15px;
+    width: 170px;
+    height: 50px;
+    background-color: rgb(129, 221, 221);
+    cursor: pointer;
+
+}
+.sub img{
+    width: 40px;
+}
+.sub:hover {
+    background-color: rgb(234, 236, 197);
+}
+.manu{
+  
+    height: 60px;
+    width: 1200px;
+    display:flex;
+
+}
+.home{
+    box-shadow: rgb(231, 36, 36) 0px 0px 5px 5px;
+    margin-right: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  margin-left: 20px;
+  background-color: rgb(206, 207, 202);
+    height: 60px;
+    width: 180px;
+}
+.vie{
+    box-shadow: rgb(231, 36, 36) 0px 0px 5px 5px;
+    margin-right: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(206, 207, 202);
+    height: 60px;
+    width: 180px;
+}
+.live{
+    box-shadow: rgb(231, 36, 36) 0px 0px 5px 5px;
+    margin-right: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(206, 207, 202);
+    height: 60px;
+    width: 180px;
+}
+.playlist{
+    box-shadow: rgb(231, 36, 36) 0px 0px 5px 5px;
+    margin-right: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(206, 207, 202);
+    height: 60px;
+    width: 180px;
+}
+.post{
+    box-shadow: rgb(231, 36, 36) 0px 0px 5px 5px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(206, 207, 202);
+    height: 60px;
+    width: 180px;
+}
+h6{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 20px;
+}
+.home:hover{
+    transform: scale(1.1);
+    background-color: aqua;
+}
+ .vie:hover{
+    transform: scale(1.1);
+    background-color: aqua;
+
+ }
+ .live:hover{
+    transform: scale(1.1);
+    background-color: aqua;
+
+ }
+ .playlist:hover{
+    transform: scale(1.1);
+    background-color: aqua;
+
+ }
+ .post:hover{
+    transform: scale(1.1);
+    background-color: aqua;
+
+ }
+ .video{
+   
+    height: 550px;
+    width: 1200px;
+ }
+ .line{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    width: 1200px;
+    height: 300px;
+   
+ }
+ .m0{
+    margin: 10px;
+    box-shadow: rgb(190, 187, 190) 0px 0px 10px 0px;
+   border-radius: 20px;
+    width: 280px;
+    height: 300px;
+    background-color: rgb(221, 230, 230);
+ }
+ .m0:hover{
+    background-color: rgb(156, 156, 194);
+    transform: scale(1.01);
+ }
+ 
+ .in{overflow: hidden;
+    width: 280px;
+    height: 220px;
+   
+ }
+ .in video{
+    border-radius: 20px;
+    width:280px;
+    height: 220px;
+    object-fit: cover;
+ }
+ .under{
+    display: flex;
+    width: 280px;
+    height: 80px;
+   
+ }
+ .profal{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height:80px ;
+   
+ }
+ .profal img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+ }
+ .te{
+    width: 245px;
+    height: 80px;
+    
+ }
+ h4{
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: khmer os battambang;
+ }
+ h5{
+    margin-left: 10px;
+   color: rgb(92, 91, 89);
+    font-family: khmer os battambang;
+ }
+ .te img {
+    width: 15px;
+ }

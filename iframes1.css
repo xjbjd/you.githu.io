@@ -1,0 +1,105 @@
+
+.man{
+    background-color: rgb(241, 227, 227);
+    width: 100%;
+    height: auto;
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: khmer os battambang;
+}
+.v{
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+   
+   
+    width: 100%;
+    height: 240px;
+}
+.v video{
+    border-radius: 20px;
+    object-fit: cover;
+    width: 95%;
+    height: 210px;
+}
+.t{
+    padding: 5px;
+    object-fit: cover;
+    box-shadow: rgb(129, 124, 129) 0px 0px 5px 0px;
+    background-color: rgb(222, 222, 231);
+    width: 100%;
+    height: 160px;
+}
+h3{
+    color: rgb(62, 63, 63);
+}
+h2{
+   
+    color: black;
+}
+.d{
+    margin-top: 10px;
+    display: flex;
+  
+    width: 100%;
+    height: 50px;
+}
+.donw{
+    box-shadow: black 0px 0px 5px 0px;
+    margin-left: 10px;
+    border-radius: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: rgb(215, 216, 221);
+    width: 100px;
+    height: 50px;
+}
+.donw:hover{
+    transform: scale(1.1);
+    background-color: aqua;
+}
+
+.donw img{
+    width: 30px;
+}
+.p{
+    margin-top: 10px;
+    display: flex;
+   
+    width: 100%;
+    height: 50px;
+}
+h1{
+    font-size: 20px;
+}
+.play-all{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    width: 160px;
+    height: 50px;
+    background-color: rgb(215, 216, 221);
+    border-radius: 20px;
+}
+a{
+    color: black;
+    text-decoration: none
+}
+.play-all img{
+    width: 30px;
+}
+.play-all:hover{
+    transition: 1s ease;
+    transform: scale(1,1);
+    background-color: rgb(57, 136, 240);
+}

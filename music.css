@@ -1,0 +1,34 @@
+.man{
+   
+    height: 795px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+iframe{
+    width: 100%;
+    height: 792px;
+}
+.music{
+    display: flex;
+    height: 795px;
+    width: 90%;
+}
+
+.music-play{
+    width: 70%;
+    height: 770px;
+    
+}
+.music-manu{
+    width: 30%;
+   height: 770px;
+    
+}

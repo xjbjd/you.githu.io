@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.man{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: auto;
+
+}
+@media (max-width: 768px) {
+    .v, .t {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3, h4 {
+        font-size: 14px;
+    }
+}
+
+    body{
+        font-family: "Khmer OS Battambang", sans-serif;
+    }
+
+.box:hover{
+    background-color: rgb(178, 233, 224);
+    transition: 1s ease;
+    transform:scale(0.99);
+}
+h3{
+    margin: 10px;
+    font-family: Khmer OS Battambang;
+    margin-left: 5px;
+    width: 1200px;
+    height: 50px;
+    font-size: 30px;
+}
+.b{
+    height: 900px;
+    width: 1200px;
+}
+.box{ 
+    margin-top: 10px;
+    box-shadow: rgb(172, 172, 168) 0 0 5px 0;
+    border-radius: 15px;
+    height: 280px;
+    background-color: rgb(241, 243, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.v{
+    width: 450px;
+    height: 280px;
+    
+}
+h1{
+    font-size: 20px;
+}
+a{
+    font-family: Khmer OS Battambang;
+    text-decoration: none;
+    color: black;
+}
+h2{
+    margin-top: 10px;
+    font-family: Khmer OS Battambang;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(73, 72, 72);
+}
+.v video{
+    object-fit: cover;
+    width: 450px;
+    height: 280px;
+    border-radius: 15px;
+  
+}
+.t{
+    padding: 15px;
+    height: 280px;
+   
+    width: 630px;
+}
+.d{
+    height: 280px;
+    width: 120px; 
+}
+.in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    
+}
+.in1{
+  
+    width: 100%;
+    height: 180px;
+    
+}
+.in img{
+    padding: 10px;
+    width: 40px;
+}

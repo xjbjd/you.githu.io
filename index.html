@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is my TV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-ba">
+        <div class="user"> 
+            <div class="icon">
+                <ul>
+                    <li onclick="toggleLeftExpandCenter()" role="button" aria-label="Toggle Sidebar">
+                        <img src="icon/menu-burger.png" alt="Toggle Sidebar">
+                    </li>
+                </ul>
+             </div>
+             <a href="register.html">
+                <div class="creart">
+                    <h4>Creart</h4>
+                </div>
+            </a>
+             
+        </div>
+
+        <div class="search">
+            <img src="logo/unnamed.png">
+            <h1> My YouTube</h1>
+            <div class="icon-search">
+            </div>
+           
+        </div>
+         <div class="login">
+            <div class="icon-portrait">
+                <a href="#"><img src="icon/portrait.png"></a>
+                <a href="#"><img src="logo/download.png"></a>
+             </div>
+         </div>
+    </div> 
+    
+    <div class="man">
+        <div class="left" id="leftDiv">
+            <iframe id="leftIframe" src="left.html"></iframe>
+        </div>
+        <div class="center" id="centerDiv">
+            <iframe id="centerIframe" src="center.html"></iframe>
+        </div>
+        <div class="right">
+            <iframe id="rightIframe" src="right.html"></iframe>
+        </div>
+    </div>
+
+    <script>
+        // Toggle Left Column and Expand Center Column
+        function toggleLeftExpandCenter() {
+            const leftDiv = document.getElementById("leftDiv");
+            const centerDiv = document.getElementById("centerDiv");
+
+            leftDiv.classList.toggle("hidden { display: none; }");
+            centerDiv.classList.toggle("expanded { width: 80%; }");
+        }
+
+        // Iframe Interaction
+        document.getElementById("leftIframe").addEventListener("load", function() {
+            let leftDocument = this.contentDocument || this.contentWindow.document;
+
+            leftDocument.querySelectorAll("li").forEach(item => {
+                item.addEventListener("click", function() {
+                    let url = this.getAttribute("data-url");
+                    document.getElementById("centerIframe").src = url;
+                });
+            });
+        });
+
+        // Error Handling for Iframes
+        const iframes = document.querySelectorAll("iframe");
+        iframes.forEach(iframe => {
+            iframe.onerror = () => {
+                iframe.contentDocument.body.innerHTML = "<p>Failed to load content.</p>";
+            };
+        });
+    </script>
+</body>
+</html>

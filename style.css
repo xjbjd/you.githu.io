@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.nav-ba {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .man {
+        flex-direction: column;
+    }
+    .left, .center, .right {
+        flex: none;
+        width: 100%;
+        height: 50vh;
+    }
+}
+.man {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 60px); /* Adjust based on nav height */
+}
+.icon img {
+    width: 50px;
+}
+li{
+    list-style: none;
+}
+.search {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 70%;
+    height: 80px;
+    box-shadow: rgb(247, 243, 238) 10px 0px 10px 0px ;
+    background-color: rgb(4, 114, 240);
+}
+
+
+.icon-search img {
+    width: 40px;
+    margin-right: 20px;
+}
+
+.icon-portrait img {
+    width: 50px;
+    margin-right: 30px;
+}
+
+.user {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 15%;
+    height: 80px;
+    background-color: rgb(4, 114, 240);
+}
+
+
+h1 {
+    margin: 20px;
+    color: rgb(97, 238, 15);
+    font-family: 'Khmer OS Battambang', sans-serif;
+}
+
+img {
+    padding: 10px;
+    margin-right: 20px;
+    width: 100px;
+}
+
+input {
+    border-color: salmon;
+    border-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    height: 40px;
+}
+
+.login {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 15%;
+    height: 80px;
+    background-color: rgb(4, 114, 240);
+}
+
+
+.man{
+  
+    justify-content: center;
+    display: flex; 
+    width: 100%;
+    height: auto;
+ 
+}
+.creart{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(11, 235, 48);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    box-shadow: rgb(184, 192, 173) 0px 0px 10px 0px;
+}
+.creart:hover {
+    background-color: rgb(115, 121, 126);
+}
+h4{
+    color: antiquewhite;
+}
+a{
+    text-decoration: none;
+}
+.left iframe{
+    padding: 0;
+    width: 300px;
+    height: 800px;
+}
+.center iframe{
+    width: 1300px;
+    height: 800px;
+}
+.right iframe{
+    width: 300px;
+    height: 800px;
+}

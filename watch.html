@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="watch.css">
+</head>
+<body>
+    <div class="s">
+        <a href="#">
+            <div class="s1">
+                <p>All</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="s1">
+                <p>Video</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="s1">
+                <p>Shorts</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="s1">
+                <p>Photo</p>
+            </div>
+        </a>
+    </div>
+    <div class="man">
+
+        <div class="if1">
+            <iframe id="iframe1" src="iframes1.html"></iframe>
+        </div>
+        <div class="if2">
+            <iframe id="iframe2" src="iframes2.html"></iframe>
+        </div>
+        
+    </div>
+    <script>
+     document.getElementById("iframe2").addEventListener("load", function() {
+    let iframe2 = this;
+    let leftDocument = iframe2.contentDocument || iframe2.contentWindow.document;
+    
+    if (!leftDocument) return;
+
+    leftDocument.querySelectorAll("li").forEach(item => {
+        item.addEventListener("click", function() {
+            let url = this.getAttribute("data-url");
+
+            // លុបទាំង iframe1 និង iframe2
+            document.querySelector(".if1").remove();
+            document.querySelector(".if2").remove();
+
+            // បង្កើតទំព័រថ្មីក្នុង body
+            let newIframe = document.createElement("iframe");
+            newIframe.src = url;
+            newIframe.style.width = "100%";
+            newIframe.style.height = "100vh";
+
+            document.body.appendChild(newIframe);
+        });
+    });
+});
+
+
+    </script>
+</body>
+</html>

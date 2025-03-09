@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <link rel="stylesheet" href="play.css">   
+</head>
+<body>
+    <div class="man">
+        <div class="iframe1">
+            <iframe id="iframe1" src="play-video.html"></iframe>
+        </div>
+        <div class="iframe2">
+            <iframe id="iframe2" src="manu.html"></iframe>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById("iframe2").addEventListener("load", function() {
+            let leftDocument = this.contentDocument || this.contentWindow.document;
+    
+            if (!leftDocument) return; // Ensure the document is accessible
+    
+            leftDocument.querySelectorAll("li").forEach(item => {
+                item.addEventListener("click", function() {
+                    let url = this.getAttribute("data-url");
+                    document.getElementById("iframe1").src = url;
+                });
+            });
+        });
+    </script>
+    
+   
+</body>
+</html>
